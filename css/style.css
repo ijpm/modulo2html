@@ -41,18 +41,31 @@ h1{
 	font-family: 'Orbitron', sans-serif;
 	padding:15px;
 }
-.header > .banner-arrow{
-	background-color: rgba(255,255,255,0.8);
+.header > .banner-arrow{	
 	position: absolute;
-	top:60%;
 	width: 5%;
 	left: 47.5%;
 	border-radius: 50px;
 	cursor: pointer;
+	animation: flechaAnimation 5s forwards;
 }
-.header > .banner-arrow > img{
+.header > .banner-arrow > a >img{
 	width: 100%;
 	height: 100%;	
+}
+
+@keyframes flechaAnimation {
+	0% {
+		top: 0%;
+		background-color: rgba(255,255,255,0);
+	}
+	100% {
+		top: 60%;
+		background-color: rgba(255,255,255,0.8);		
+	}
+}
+.special{
+	cursor: pointer;
 }
 .navbar{
 	width: 100%;
@@ -85,6 +98,7 @@ h1{
 .navbar .navbar-list .navbar-item .navbar-link:hover{
 	color:#000;
 	background-color: #FFF;
+	transition: all 1s;
 }
 .quien-retrato{
 	width: 100%;
@@ -92,7 +106,7 @@ h1{
 }
 
 .content{
-	padding: 50px 0;
+	padding: 80px 0;
 }
 .content-reverse{
 	background-color: #000;
@@ -160,9 +174,11 @@ label {
 	color:#000;
 }
 .radiosel{
-	border: 1px solid #000;
-	text-align: center;
-	padding: 15px;
+	color:#000!important;
+	background-color: #FFF!important;
+	border: 1px solid #000!important;
+	text-align: center!important;
+	padding: 15px!important;
 }
 /*Pongo los placeholders en blanco*/
 ::-webkit-input-placeholder { color: #FFF; } /* WebKit */
@@ -176,4 +192,26 @@ label {
 	display: block;
 	height: 0;
 	clear: both;
+}
+.loader {
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #3498db;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	animation: spin 2s linear infinite;
+	margin: 100px auto;
+}
+.loader2 {
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #3498db;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	animation: spin 2s linear infinite;
+	margin: 100px auto;
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }

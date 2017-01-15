@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<title>Cv Ijpm</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+</head>
+<body>
+	<nav class="navbar">
+		<ul class="navbar-list" id="menu">
+			<li class="navbar-item">
+				<a href="index.html#inicio" class="navbar-link">Inicio</a>
+			</li>
+			<li class="navbar-item">
+				<a href="index.html#quien" class="navbar-link">Quien soy</a>
+			</li>
+			<li class="navbar-item">
+				<a href="index.html#estudios" class="navbar-link">Estudios</a>
+			</li>
+			<li class="navbar-item">
+				<a href="index.html#experiencia" class="navbar-link">Experiencia</a>
+			</li>
+			<li class="navbar-item">
+				<a href="index.html#sobre" class="navbar-link">Sobre mi</a>
+			</li>
+			<li class="navbar-item">
+				<a href="index.html#contacto" class="navbar-link">Contacto</a>
+			</li>
+			<li class="navbar-item active">
+				<a href="admin.html" class="navbar-link">Admin</a>
+			</li>
+		</ul>		
+	</nav>
+	<main>
+		<div class="container">
+			<section id="estudios" class="content row">
+				<div class="row">
+					<div class="col-12">
+						<header>
+							<h1>Estudios admin</h1>
+						</header>
+					</div>
+					<div class="col-4">				
+						<div class="row">
+							<form action="">
+								<div>
+									<h3>Nueva titulacion</h3>
+								</div>
+								<div>
+									<label for="nombre">
+										Nombre
+									</label>
+									<input id="newtitulacionNombre" type="text" required>
+								</div>
+								<div>
+									<label for="centro">
+										Centro
+									</label>
+									<input id="newtitulacionCentro" type="text" required>
+								</div> 
+								<div>
+									<button id="sendNewTitulacion">Enviar</button>
+								</div> 
+							</form>
+						</div>
+					</div>
+					<div class="col-8 pl">				
+						<div>
+							<h3>Listado de titulaciones</h3>
+						</div>
+						<div class="loader"></div>
+						<div id="titulacionesContainer">
+							
+						</div>						
+					</div>
+				</div>		
+			</section>
+			<section id="experiencia" class="content row ">
+				<div class="row">
+					<div class="col-12">
+						<header>
+							<h1>Experiencia admin</h1>
+						</header>
+					</div>
+					<div class="col-4">				
+						<div class="row ">
+							<form action="">
+								<div>
+									<h3>Nueva experiencia</h3>
+								</div>
+								<div>
+									<label for="nombre">
+										Nombre
+									</label>
+									<input id="newExperienciaNombre"  type="text" required>
+								</div>
+								<div>
+									<label for="centro">
+										Centro
+									</label>
+									<input id="newExperienciaCentro"  type="text" required>
+								</div> 
+								<div>
+									<label for="descripcion">
+										Descripción
+									</label>
+									<input id="newExperienciaDescripcion"  type="text" required>
+								</div>
+								<div>
+									<button id="sendNewExperiencia">Enviar</button>
+								</div> 
+							</form>
+						</div>
+					</div>
+					<div class="col-8 pl">				
+						<div>
+							<h3>Listado de experiencias</h3>
+						</div>					
+						<div class="loader2"></div>
+						<div id="experienciasContainer">
+							
+						</div>		
+					</div>
+				</div>		
+			</section>
+		</div>
+	</main>
+	<footer class="footer content-reverse">
+		<div class="container row">
+			<div class="col-6">
+				IjPm 2016
+			</div>
+			<div class="col-6">
+				<a href="https://github.com/ijpm" target="_blank">
+					<img src="./img/git.png" alt="logo git" class="img-git">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="./js/jquery.js" ></script>
+<script type="text/javascript" src="./js/admin.js" ></script>
+</html>
+<!-- por si la flecha -->
