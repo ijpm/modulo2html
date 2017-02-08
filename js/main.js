@@ -115,9 +115,6 @@ $(document).ready(function(){
 		getTitulaciones();
 		getExperiencias();
 	}, 1500);
-	setTimeout(function() {
-		$(".video").html('<video width="400" height="300" controls><source src="video/sobre.mp4" type="video/mp4" id="videosobremi"></video>');
-	}, 1500);
 	
 	/************ FIN Carga de titulaciones y experiencias**********************************/
 

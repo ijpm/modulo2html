@@ -137,12 +137,18 @@ h1{
 	float: right;
 }
 
-input[type=text],input[type=mail],input[type=submit],textarea{
-	background-color: #000;
-    border: medium none;
-    color: #fff;
+input[type=text],input[type=mail],textarea{
+    border: 1px solid #000;
     padding: 15px;
     width: 100%;
+    color: #000;
+}
+input[type=submit]{
+	background-color:#000;
+    border: 1px solid #000;
+    padding: 15px;
+    width: 100%;
+    color: #FFF;
 }
 input[type=submit]:hover{
 	background-color: #FFF;
